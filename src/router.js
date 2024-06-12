@@ -8,10 +8,10 @@ import Stocks from './components/stocks/Stocks'
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
-    routes: [
-        { path: '/', component: Home },
-        { path: '/portfolio', component: Portfolio },
-        { path: '/stocks', component: Stocks },
-    ]
-})
+  mode: 'history',
+  routes: [
+    { path: '/', component: Home },
+    { path: '/portfolio', component: Portfolio },
+    { path: '/stocks', component: Stocks },
+  ],
+});
