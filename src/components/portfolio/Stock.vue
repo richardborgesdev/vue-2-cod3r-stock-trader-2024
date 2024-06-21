@@ -1,6 +1,6 @@
 <template>
   <v-flex class="pr-3 pb-3" xs12 md6 lg4>
-    <v-card class="green darken-3 white-text">
+    <v-card class="blue darken-3 white-text">
       <v-card-title class="headline">
         <strong>
           {{ stock.name }}
@@ -14,7 +14,7 @@
       <v-container fill-height>
         <v-text-field label="Quantidade" type="number" v-model.number="quantity">
         </v-text-field>
-        <v-btn class="green darken-3 white-text" @click="sellStock"
+        <v-btn class="blue darken-3 white-text" @click="sellStock"
           :disabled="quantity <= 0 || !Number.isInteger(quantity)">
           Vender
         </v-btn>
@@ -41,7 +41,7 @@ export default {
     }),
     sellStock() {
       const order = {
-        stokId: this.stock.id,
+        stockId: this.stock.id,
         stockPrice: this.stock.price,
         quantity: this.quantity,
       };
