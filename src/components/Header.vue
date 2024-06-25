@@ -45,7 +45,7 @@
       </v-menu>
       <v-layout align-center>
         <span class="text-upercase grey--text text--darken-2">
-          Saldo: R$ {{ funds }}
+          Saldo: {{ funds | currency }}
         </span>
       </v-layout>
     </v-toolbar-items>
