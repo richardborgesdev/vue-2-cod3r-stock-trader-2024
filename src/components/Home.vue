@@ -22,7 +22,7 @@
     <v-divider class="my-4" />
     <p class="display-1">
       <strong>
-        Seu Saldo: {{ funds }}
+        Seu Saldo: {{ funds | currency }}
       </strong>
     </p>
   </div>
