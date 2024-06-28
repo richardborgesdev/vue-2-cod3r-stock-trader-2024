@@ -70,6 +70,10 @@ export default {
     endDay() {
       this.randomizeStocks();
     },
+    saveData() {
+      const { funds, stockPortfolio, stocks } = this.$store.getters;
+      this.$http.put('data.json', { funds, stockPortfolio, stocks });
+    }
   },
 }
 </script>
